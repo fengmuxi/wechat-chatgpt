@@ -59,9 +59,9 @@ export class ChatGPTBot {
         await this.trySay(talker,"========\n" +
           "/cmd help\n" +
           "# 显示帮助信息\n" +
-          "/cmd prompt <PROMPT>\n" +
+          "/cmd prompt /PROMPT/\n" +
           "# 设置当前会话的 prompt \n" +
-          "/img <PROMPT>\n" +
+          "/img /PROMPT/\n" +
           "# 根据 prompt 生成图片\n" +
           "/cmd clear\n" +
           "# 清除自上次启动以来的所有会话\n" +
