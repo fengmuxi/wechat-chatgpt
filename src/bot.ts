@@ -257,7 +257,7 @@ export class ChatGPTBot {
       })
       return;
     }
-    if (rawText.startsWith("/cmd ")||rawText.startsWith(`@${talker.name()}`+"/cmd ")){
+    if (rawText.startsWith("/cmd ")||rawText.startsWith(`@${talker.name()}`+" /cmd ")){
       console.log(`🤖 Command: ${rawText}`)
       const cmdContent = rawText.slice(5) // 「/cmd 」一共5个字符(注意空格)
       if (privateChat) {
@@ -268,7 +268,7 @@ export class ChatGPTBot {
       return;
     }
     // 使用DallE生成图片
-    if (rawText.startsWith("/img")||rawText.startsWith(`@${talker.name()}`+"/img")){
+    if (rawText.startsWith("/img")||rawText.startsWith(`@${talker.name()}`+" /img")){
       console.log(`🤖 Image: ${rawText}`)
       const imgContent = rawText.slice(4)
       if (privateChat) {
